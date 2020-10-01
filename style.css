@@ -141,7 +141,8 @@ a:hover {
 	padding-left: 16px;
 }
 .section {
-	padding-top: 64px;
+	padding-top: 50px;
+	padding-bottom: 16px;
 }
 .section_title {
 	padding-bottom: 32px;
@@ -163,6 +164,10 @@ a:hover {
 }
 .tovar_item__desc {
 	padding: 16px;
+	min-height: 200px;
+}
+.tovar_item__desc span {
+	padding-top: 6px;
 }
 .tovar_title {
 	font-family: "TT Norms", sans-serif;
@@ -183,6 +188,7 @@ a:hover {
 	position: absolute;
 	right: 16px;
 	top: 16px;
+	z-index: 11;
 }
 .back-white {
 	border-radius: 20px;
@@ -269,6 +275,149 @@ a:hover {
 }
 .tovar_item__img img {
 	border-radius: 5px;
+}
+.button__white {
+	padding: 12px 70px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #FF8A00;
+	background: #fff;
+}
+.button__orange {
+	padding: 12px 70px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #fff;
+	background: #FF8A00;
+}
+.button__white:hover {
+	color: #fff;
+	background: #FF8A00;
+}
+.button {
+	border: 2px solid #FF8A00;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+.showmore {
+	margin-top: 32px;
+}
+.stocks_block {
+	width: 50%;
+}
+.stocks_item {
+	height: 210px;
+	border-radius: 10px;
+	position: relative;
+}
+.stocks_item__img {
+  background-position: right;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10px;
+}
+.stocks_item__desc {
+	border-radius: 10px;
+	padding: 32px 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #fff;
+	font-family: "TT Norms", sans-serif;
+}
+.stocks_item__desc h4 {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #fff;
+	max-width: 180px;
+	font-family: "TT Norms", sans-serif;
+	margin-bottom: 16px;
+}
+.stocks_item__desc p {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #fff;
+	max-width: 180px;
+	font-family: "TT Norms", sans-serif;
+}
+.stocks_item__desc-first {
+	background-image: url(/img/mask.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+.stocks_item__desc-second {
+	background-image: url(/img/mask2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px 0 0 10px;
+	width: 40%;
+}
+.tabs {
+	border: none;
+	padding: 0;
+}
+.product_tabs li {
+	width: 12.5%;
+}
+.product_tabs li a {
+	border-radius: 10px;
+	background: #F2E8E1;
+	height: 111px;
+	display: flex!important;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #333333;
+	font-family: "TT Norms", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: center;
+	border: 2px solid #F2E8E1;
+	outline: none;
+}
+.product_tabs li a:hover {
+	border-color: #FF8A00;
+	background: #F2E8E1;
+	color: #FF8A00;
+}
+.product_tabs .tabs-title > a[aria-selected='true'] {
+	border-color: #FF8A00;
+	background: #fff;
+	color: #FF8A00;
+}
+.product_tabs__img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 12px;
 }
 .footer {
 	padding-top: 30px;
