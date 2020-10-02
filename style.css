@@ -369,13 +369,13 @@ a:hover {
 	font-family: "TT Norms", sans-serif;
 }
 .stocks_item__desc-first {
-	background-image: url(img/mask.png);
+	background-image: url("img/mask.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 }
 .stocks_item__desc-second {
-	background-image: url(img/mask2.png);
+	background-image: url("img/mask2.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 10px 0 0 10px;
