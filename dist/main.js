@@ -61,6 +61,33 @@ jQuery(document).ready(function(){
 	      }, 800);
 	  });
 	}
+
+	if (document.querySelector('.tovar')) {
+		var checkWidth = $(document).width();
+		if(checkWidth <=568){
+			$(function() {
+			  var owl = $(".owl-carousel");
+			  owl.owlCarousel({
+					items: 1,
+			    merge: false,
+			    margin: 0,
+			    lazyLoad: true,
+					center: true,
+			    responsive: {
+			      320: {
+			        items: 1
+			      },
+			      560: {
+			        items: 2
+			      },
+			      992: {
+			        items: 4
+			      }
+			    }
+			  });
+			});
+	  }
+	}
 });
 
 $('img[src$=".svg"]').each(function() {
