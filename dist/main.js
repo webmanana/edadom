@@ -1,27 +1,3 @@
-(function ($) {
-	$.fn.buttonLoader = function (action) {
-			var self = $(this);
-			if (action == 'start') {
-					if ($(self).attr("disabled") == "disabled") {
-							e.preventDefault();
-					}
-					$('.has-spinner').attr("disabled", "disabled");
-					$(self).attr('data-btn-text', $(self).text());
-					$(self).addClass('loading');
-					$(self).val('Добавлено!');
-					$(self).parents(".tovar_addcart").find(".plus-minus-input").css("display", "none");
-			}
-			if (action == 'stop') {
-					$(self).html($(self).attr('data-btn-text'));
-					$(self).removeClass('loading');
-					$('.has-spinner').removeAttr("disabled");
-					$(self).val('В корзину');
-					$(self).parents(".tovar_addcart").find(".plus-minus-input").css("display", "flex");
-					$(self).parents(".tovar_item__top").find(".tovar_added").css("opacity", "1");
-			}
-	}
-})(jQuery);
-
 jQuery(document).ready(function(){
 	if (document.querySelector('.plus-minus-input')) {
 		$('[data-quantity="plus"]').on("click",function(e){
@@ -52,16 +28,6 @@ jQuery(document).ready(function(){
 				}
 		});
 	}
-	if (document.querySelector('.addcart__sumbit')) {
-		$('.addcart__sumbit').click(function () {
-	      var btn = $(this);
-	      $(btn).buttonLoader('start');
-	      setTimeout(function () {
-	          $(btn).buttonLoader('stop');
-	      }, 800);
-	  });
-	}
-
 	if (document.querySelector('.tovar')) {
 		var checkWidth = $(document).width();
 		if(checkWidth <=568){
